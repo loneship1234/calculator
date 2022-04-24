@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +13,47 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.inner-shadow:hover{
+  box-shadow: 0px 0px 8px whitesmoke;
+  
+}
+.inner-shadow-2:hover{
+  box-shadow: 0px 0px 12px #4ade80;
+  
+}
+*{
+  transition: all 0.4s;
+  user-select: none;
+}
+.h-custom{
+  height: 39.5em;
+}
+
+.anime:hover{
+  transition-delay: 1s;
+  transition: all 1s;
+    font-size:30px;
+    background: linear-gradient(135deg, #4ade80,#6effa3, #b5f6cd);
+    background-size: 200% 200%;
+
+    -webkit-animation: Animation 5s ease infinite;
+    -moz-animation: Animation 5s ease infinite;
+    animation: Animation 5s ease infinite;
+}
+
+@-webkit-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@-moz-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@keyframes Animation { 
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
 }
